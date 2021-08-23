@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: none;
-    font-family: 'Quicksand'
+    font-family: 'Quicksand';
+    user-select:none;
 }
 :root{
     --color1:#5cdb95;
@@ -15,8 +16,26 @@ body{
     background: var(--color1);
     background-color: linear-gradient(90deg, rgba(92,219,149,1) 47%, rgba(142,228,175,1) 100%);;
 }
+.main-container{
+    height: auto;
+    z-index: 1;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: red;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+}
+.main-container{
+    font-size: 40px;
+    color: transparent;
+}
 .container{
-    width: 500px;
+    width: auto;
+    z-index: 2;
     height: 300px;
     position: absolute;
     left: 50%;
@@ -63,4 +82,29 @@ body{
 .container .label-p{
     padding: 20px;
     font-size: 17px;
+}
+
+.circle-1{
+    background-color: var(--color3);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 60%;
+    top: 70%;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    
+}
+.circle-2{
+    background-color: var(--color3);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 40%;
+    top: 30%;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+    position: absolute;
 }

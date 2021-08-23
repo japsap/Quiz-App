@@ -63,3 +63,11 @@ goToOther.addEventListener("click", () => {
         alert("You completed the quiz now leave :)");
     }
 });
+
+function Validate() {
+    if( a || b || c || d.checked ){
+        currentQuestion++
+    } else{
+        alert('Please give us an answer')
+    }
+}
